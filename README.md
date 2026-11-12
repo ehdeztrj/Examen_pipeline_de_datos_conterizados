@@ -39,7 +39,7 @@ A continuación se muestran las evidencias de la correcta ejecución de cada com
   ![Hadoop Version](evidencias/hadoop_version.png)
 
 * **SSH sin contraseña (API a Hadoop):** 
-  ![SSH sin contraseña](evidencias/ssh_sin_contra.png)
+  ![SSH sin contraseña](evidencias/ssh_sin_contrasena.png)
 
 * **Salida exitosa del Job MapReduce:** 
   ![Salida del Job](evidencias/salida_job.png)
