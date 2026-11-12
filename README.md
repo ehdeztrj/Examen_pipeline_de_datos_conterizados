@@ -1,5 +1,3 @@
-## Parte E: Respuestas Teóricas
-
 ## Pasos para reproducir el pipeline
 1. **Generar el dataset:** Ejecutar `python generar_dataset.py` e ingresar la matrícula para crear el archivo CSV.
 2. **Levantar el entorno:** Ejecutar `docker compose up -d --build` para encender Hadoop, PostgreSQL y la API.
@@ -16,6 +14,8 @@
    docker cp ./part-00000 api_server:/app/part-00000
    docker cp cargar_resultados.py api_server:/app/cargar_resultados.py
    docker exec -it api_server python cargar_resultados.py
+
+## Respuestas Teóricas
 
 **1. Modos de Hadoop y HDFS**
 El modo *standalone* usa un solo proceso Java sin demonios y utiliza el sistema de archivos local (ideal para testear scripts rápido). El *pseudo-distribuido* corre todos los demonios (NameNode, DataNode) simulados en una sola máquina física. El *totalmente distribuido* reparte estos demonios en un clúster de múltiples servidores. HDFS se utiliza únicamente en los modos pseudo-distribuido y totalmente distribuido.
